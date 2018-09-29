@@ -1,206 +1,217 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Javascript_Practice</title>
 
-  <!--<script src="resources/js/javascriptPractice.js"></script>-->
-  <script type="text/javascript" src="resources/js/if_else.js"></script>
-  <script type="text/javascript" src="resources/js/switch.js"></script>
-  <script type="text/javascript" src="resources/js/for_loop.js"></script>
+<head>
+    <title>Javascript_Practice</title>
+
+    <script src="resources/js/javascriptPractice.js"></script>
+    <script type="text/javascript" src="resources/js/if_else.js"></script>
+    <script type="text/javascript" src="resources/js/switch.js"></script>
+    <script type="text/javascript" src="resources/js/for_loop.js"></script>
+    <script type="text/javascript" src="resources/js/while_loop.js"></script>
+    <script type="text/javascript" src="resources/js/array.js"></script>
+    <script type="text/javascript" src="resources/js/interview_practice.js"></script>
+    <script type="text/javascript" src="resources/js/dom.js"></script>
+    
 </head>
 
 <body>
 
-  <h3>1. Write a program to enter two numbers and find their sum.</h3>
-  <input type="text" id="firstInput">
-  <input type="text" id="secondInput">
-  <button id="addButton" onclick="sumOfTwoNumbers()">Add</button>
-  <div id="answer"></div>
+    <h3>1. Write a program to enter two numbers and find their sum.</h3>
+    <input type="text" id="firstInput">
+    <input type="text" id="secondInput">
+    <button id="addButton" onclick="sumOfTwoNumbers()">Add</button>
+    <div id="answer"></div>
 
-  <h3>2. Write a program to find the input value is even or odd.</h3>
-  <input type="text" id="inputValue">
-  <button id="checkButton" onclick="checkOddEven()">Check</button>
-  <div id="oddEvenResult"></div>
+    <h3>2. Write a program to find the input value is even or odd.</h3>
+    <input type="text" id="inputValue">
+    <button id="checkButton" onclick="checkOddEven()">Check</button>
+    <div id="oddEvenResult"></div>
 
-  <h3>3. Write a program to find the factorial of the given input.</h3>
-  <input type="text" id="factorialInputValue">
-  <button id="factorialButton" onclick="findFactorial()">Factorial</button>
-  <div id="factorialResult"></div>
+    <h3>3. Write a program to find the factorial of the given input.</h3>
+    <input type="text" id="factorialInputValue">
+    <button id="factorialButton" onclick="findFactorial()">Factorial</button>
+    <div id="factorialResult"></div>
 
-  <h3>4. Write a program to verify age of any person, if age is greater than 18 show message adult otherwise show under 18.</h3>
-  <input type="text" id="inputAge">
-  <button id="verifyAgeButton" onclick="verifyAge()">Verify Age</button>
-  <div id="ageResult"></div>
+    <h3>4. Write a program to verify age of any person, if age is greater than 18 show message adult otherwise show under 18.</h3>
+    <input type="text" id="inputAge">
+    <button id="verifyAgeButton" onclick="verifyAge()">Verify Age</button>
+    <div id="ageResult"></div>
 
-  <h3>5. Write a program to enter length and width of a rectangle and find its perimeter.</h3>
-  <input type="text" id="length">
-  <input type="text" id="breadth">
-  <button id="perimeterButton" onclick="findPerimeter()">Find Perimeter</button>
-  <div id="perimeterResult"></div>
+    <h3>5. Write a program to enter length and width of a rectangle and find its perimeter.</h3>
+    <input type="text" id="length">
+    <input type="text" id="breadth">
+    <button id="perimeterButton" onclick="findPerimeter()">Find Perimeter</button>
+    <div id="perimeterResult"></div>
 
-  <h3>6. Write a program to enter length and breadth of a rectangle and find its area.</h3>
-  <input type="text" id="inputLength">
-  <input type="text" id="inputBreadth">
-  <button id="areaFindButton" onclick="findArea()">Find Area</button>
-  <div id="areaResult"></div>
+    <h3>6. Write a program to enter length and breadth of a rectangle and find its area.</h3>
+    <input type="text" id="inputLength">
+    <input type="text" id="inputBreadth">
+    <button id="areaFindButton" onclick="findArea()">Find Area</button>
+    <div id="areaResult"></div>
 
-  <h3>7. Write a program to enter radius of a circle and find its diameter, circumference and area.</h3>
-  <input type="text" id="inputRadius">
-  <button id="circleFindButton" onclick="findDiaCirAreOfCircle()">Find</button>
-  <div id="circleResult"></div>
+    <h3>7. Write a program to enter radius of a circle and find its diameter, circumference and area.</h3>
+    <input type="text" id="inputRadius">
+    <button id="circleFindButton" onclick="findDiaCirAreOfCircle()">Find</button>
+    <div id="circleResult"></div>
 
-  <h3>8. Write a program to convert centimeter to meter and kilometer.</h3>
-  <input type="text" id="centimeter">
-  <button id="convertButton" onclick="convertCentimeter()">Convert</button>
-  <div id="convertResult"></div>
+    <h3>8. Write a program to convert centimeter to meter and kilometer.</h3>
+    <input type="text" id="centimeter">
+    <button id="convertButton" onclick="convertCentimeter()">Convert</button>
+    <div id="convertResult"></div>
 
-  <h3>9. Write a program to enter temperature in Celsius and convert it into Fahrenheit.</h3>
-  <input type="text" id="celsius">
-  <button id="tempConvertButton" onclick="convertTempCelsToFahr()">Convert</button>
-  <div id="tempConvertResult"></div>
+    <h3>9. Write a program to enter temperature in Celsius and convert it into Fahrenheit.</h3>
+    <input type="text" id="celsius">
+    <button id="tempConvertButton" onclick="convertTempCelsToFahr()">Convert</button>
+    <div id="tempConvertResult"></div>
 
-  <h3>10. Write a program to enter temperature in Fahrenheit and convert to Celsius.</h3>
-  <input type="text" id="fahrenheit">
-  <button id="tempConverterButton" onclick="convertTempFahrToCels()">Convert</button>
-  <div id="tempConverterResult"></div>
+    <h3>10. Write a program to enter temperature in Fahrenheit and convert to Celsius.</h3>
+    <input type="text" id="fahrenheit">
+    <button id="tempConverterButton" onclick="convertTempFahrToCels()">Convert</button>
+    <div id="tempConverterResult"></div>
 
-  <h3>11. Write a program to convert days into years, weeks and days.</h3>
-  <input type="text" id="days">
-  <button id="daysConvertButton" onclick="convertDays()">Convert</button>
-  <div id="daysConvertResult"></div>
+    <h3>11. Write a program to convert days into years, weeks and days.</h3>
+    <input type="text" id="days">
+    <button id="daysConvertButton" onclick="convertDays()">Convert</button>
+    <div id="daysConvertResult"></div>
 
-  <h3>12. Write a program to enter two angles of a triangle and find the third angle.</h3>
-  <input type="text" id="firstAngle">
-  <input type="text" id="secondAngle">
-  <button id="angleFindButton" onclick="findThirdAngle()">Find Angle</button>
-  <div id="angleResult"></div>
+    <h3>12. Write a program to enter two angles of a triangle and find the third angle.</h3>
+    <input type="text" id="firstAngle">
+    <input type="text" id="secondAngle">
+    <button id="angleFindButton" onclick="findThirdAngle()">Find Angle</button>
+    <div id="angleResult"></div>
 
-  <h3>13. Write a program to enter base and height of a triangle and find its area.</h3>
-  <input type="text" id="base">
-  <input type="text" id="height">
-  <button id="FindButton" onclick="findAreaOfTriangle()">Find Area</button>
-  <div id="findAreaResult"></div>
+    <h3>13. Write a program to enter base and height of a triangle and find its area.</h3>
+    <input type="text" id="base">
+    <input type="text" id="height">
+    <button id="FindButton" onclick="findAreaOfTriangle()">Find Area</button>
+    <div id="findAreaResult"></div>
 
-  <h3>14. Write a program to enter marks of five subjects and calculate total, average and percentage.</h3>
-  <input type="text" id="eng">
-  <input type="text" id="phy">
-  <input type="text" id="chem">
-  <input type="text" id="math">
-  <input type="text" id="comp">
-  <button id="resultButton" onclick="findExamResult()">Find Result</button>
-  <div id="resultArea"></div>
+    <h3>14. Write a program to enter marks of five subjects and calculate total, average and percentage.</h3>
+    <input type="text" id="eng">
+    <input type="text" id="phy">
+    <input type="text" id="chem">
+    <input type="text" id="math">
+    <input type="text" id="comp">
+    <button id="resultButton" onclick="findExamResult()">Find Result</button>
+    <div id="resultArea"></div>
 
-  <h3>15. Write a program to enter P, T, R and calculate Simple Interest.</h3>
-  <input type="text" id="principle">
-  <input type="text" id="time">
-  <input type="text" id="rate">
-  <button id="siButton" onclick="findSimpleIntrest()">Find S. I.</button>
-  <div id="siResult"></div>
+    <h3>15. Write a program to enter P, T, R and calculate Simple Interest.</h3>
+    <input type="text" id="principle">
+    <input type="text" id="time">
+    <input type="text" id="rate">
+    <button id="siButton" onclick="findSimpleIntrest()">Find S. I.</button>
+    <div id="siResult"></div>
 
-  <h3>16. Write a program to print all odd number between 1 to n.</h3>
-  <input type="text" id="oddLimit">
-  <button id="oddPrintButton" onclick="printOddNumbers()">Print Odd Numbers</button>
-  <div id="oddPrintArea"></div>
+    <h3>16. Write a program to print all odd number between 1 to n.</h3>
+    <input type="text" id="oddLimit">
+    <button id="oddPrintButton" onclick="printOddNumbers()">Print Odd Numbers</button>
+    <div id="oddPrintArea"></div>
 
-  <h3>17. Write a program to find sum of all natural numbers between 1 to n.</h3>
-  <input type="text" id="naturalNumber">
-  <button id="additionButton" onclick="findSumOfNaturalNo()">Find Sum</button>
-  <div id="additionResult"></div>
+    <h3>17. Write a program to find sum of all natural numbers between 1 to n.</h3>
+    <input type="text" id="naturalNumber">
+    <button id="additionButton" onclick="findSumOfNaturalNo()">Find Sum</button>
+    <div id="additionResult"></div>
 
-  <h3>18. Write a program to find sum of all even numbers between 1 to n.</h3>
-  <input type="text" id="evenNumberLimit">
-  <button id="evenSumButton" onclick="findSumOfEvenNumber()">Find Sum</button>
-  <div id="evenAdditionResult"></div>
+    <h3>18. Write a program to find sum of all even numbers between 1 to n.</h3>
+    <input type="text" id="evenNumberLimit">
+    <button id="evenSumButton" onclick="findSumOfEvenNumber()">Find Sum</button>
+    <div id="evenAdditionResult"></div>
 
-  <h3>19. Write a program to find sum of all odd numbers between 1 to n.</h3>
-  <input type="text" id="oddNumberLimit">
-  <button id="oddSumButton" onclick="findSumOfOddNumber()">Find Sum</button>
-  <div id="oddAdditionResult"></div>
+    <h3>19. Write a program to find sum of all odd numbers between 1 to n.</h3>
+    <input type="text" id="oddNumberLimit">
+    <button id="oddSumButton" onclick="findSumOfOddNumber()">Find Sum</button>
+    <div id="oddAdditionResult"></div>
 
-  <h3>20. Write a program to find maximum between two numbers.</h3>
-  <input type="text" id="firstNumber">
-  <input type="text" id="secondNumber">
-  <button id="maximumFindButton" onclick="findMaximumNumber()">Maximum Number</button>
-  <div id="maximumResult"></div>
+    <h3>20. Write a program to find maximum between two numbers.</h3>
+    <input type="text" id="firstNumber">
+    <input type="text" id="secondNumber">
+    <button id="maximumFindButton" onclick="findMaximumNumber()">Maximum Number</button>
+    <div id="maximumResult"></div>
 
-  <h3>21. Write a program to find maximum between three numbers.</h3>
-  <input type="text" id="firstInputNumber">
-  <input type="text" id="secondInputNumber">
-  <input type="text" id="thirdInputNumber">
-  <button id="maximumNumberButton" onclick="findGreaterNumber()">Maximum Number</button>
-  <div id="greaterResult"></div>
+    <h3>21. Write a program to find maximum between three numbers.</h3>
+    <input type="text" id="firstInputNumber">
+    <input type="text" id="secondInputNumber">
+    <input type="text" id="thirdInputNumber">
+    <button id="maximumNumberButton" onclick="findGreaterNumber()">Maximum Number</button>
+    <div id="greaterResult"></div>
 
-  <h3>22. Write a program to check whether a number is negative, positive or zero.</h3>
-  <input type="text" id="givenInput">
-  <button id="inputCheckButton" onclick="checkPositiveNegative()">Check</button>
-  <div id="checkValueResult"></div>
+    <h3>22. Write a program to check whether a number is negative, positive or zero.</h3>
+    <input type="text" id="givenInput">
+    <button id="inputCheckButton" onclick="checkPositiveNegative()">Check</button>
+    <div id="checkValueResult"></div>
 
-  <h3>23. Write a program to check whether a number is divisible by 5 and 11 or not.</h3>
-  <input type="text" id="inputNumber">
-  <button id="divisibilityButton" onclick="checkDivisibility()">Check Divisibility</button>
-  <div id="checkDivisResult"></div>
+    <h3>23. Write a program to check whether a number is divisible by 5 and 11 or not.</h3>
+    <input type="text" id="inputNumber">
+    <button id="divisibilityButton" onclick="checkDivisibility()">Check Divisibility</button>
+    <div id="checkDivisResult"></div>
 
-  <h3>24. Write a program to check whether a year is leap year or not.</h3>
-  <input type="text" id="inputYear">
-  <button id="leapYearButton" onclick="checkLeapYear()">Check Leap Year</button>
-  <div id="leapYearResult"></div>
+    <h3>24. Write a program to check whether a year is leap year or not.</h3>
+    <input type="text" id="inputYear">
+    <button id="leapYearButton" onclick="checkLeapYear()">Check Leap Year</button>
+    <div id="leapYearResult"></div>
 
-  <h3>25. Write a program to check whether a character is alphabet or not.</h3>
-  <input type="text" id="inputCharacter">
-  <button id="characterCheckButton" onclick="checkAlphabetCharacter()">Check</button>
-  <div id="checkCharecterResult"></div>
+    <h3>25. Write a program to check whether a character is alphabet or not.</h3>
+    <input type="text" id="inputCharacter">
+    <button id="characterCheckButton" onclick="checkAlphabetCharacter()">Check</button>
+    <div id="checkCharecterResult"></div>
 
-  <h3>26. Write a program to input any alphabet and check whether it is vowel or consonant.</h3>
-  <input type="text" id="anyInput">
-  <button id="anyInputCheckButton" onclick="checkVowelConsonant()">Check</button>
-  <div id="vowelConsonantResult"></div>
+    <h3>26. Write a program to input any alphabet and check whether it is vowel or consonant.</h3>
+    <input type="text" id="anyInput">
+    <button id="anyInputCheckButton" onclick="checkVowelConsonant()">Check</button>
+    <div id="vowelConsonantResult"></div>
 
-  <h3>27. Write a program to input any character and check whether it is alphabet, digit or special character.</h3>
-  <input type="text" id="anyCharacter">
-  <button id="anyCharCheckButton" onclick="checkSpecialCharacter()">Check</button>
-  <div id="anyCharCheckResult"></div>
+    <h3>27. Write a program to input any character and check whether it is alphabet, digit or special character.</h3>
+    <input type="text" id="anyCharacter">
+    <button id="anyCharCheckButton" onclick="checkSpecialCharacter()">Check</button>
+    <div id="anyCharCheckResult"></div>
 
-  <h3>28. Write a program to check whether a character is uppercase or lowercase alphabet.</h3>
-  <input type="text" id="newCharacter">
-  <button id="newCharacterButton" onclick="checkUpperLowerCase()">Check</button>
-  <div id="newCharacterResult"></div>
-  
-  <h3>29. Write a program to input angles of a triangle and check whether triangle is valid or not.</h3>
-  <input type="text" id="angle1">
-  <input type="text" id="angle2">
-  <input type="text" id="angle3">
-  <button id="triangleCheckButton" onclick="checkTriangleValid()">Check Triangle</button>
-  <div id="triangleCheckResult"></div>
+    <h3>28. Write a program to check whether a character is uppercase or lowercase alphabet.</h3>
+    <input type="text" id="newCharacter">
+    <button id="newCharacterButton" onclick="checkUpperLowerCase()">Check</button>
+    <div id="newCharacterResult"></div>
 
-  <h3>30. Write a program to input all sides of a triangle and check whether triangle is valid or not.</h3>
-  <input type="text" id="side1">
-  <input type="text" id="side2">
-  <input type="text" id="side3">
-  <button id="sidesCheckButton" onclick="checkTriangleBySides()">Check Triangle</button>
-  <div id="triangleSideCheckResult"></div>
+    <h3>29. Write a program to input angles of a triangle and check whether triangle is valid or not.</h3>
+    <input type="text" id="angle1">
+    <input type="text" id="angle2">
+    <input type="text" id="angle3">
+    <button id="triangleCheckButton" onclick="checkTriangleValid()">Check Triangle</button>
+    <div id="triangleCheckResult"></div>
 
-  <h3>31. Write a program to check whether the triangle is equilateral, isosceles or scalene triangle.</h3>
-  <input type="text" id="inputSide1">
-  <input type="text" id="inputSide2">
-  <input type="text" id="inputSide3">
-  <button id="triangleSideCheckButton" onclick="checkTriangleTypeBySide()">Check Triangle</button>
-  <div id="triangleTypeCheckResult"></div>
+    <h3>30. Write a program to input all sides of a triangle and check whether triangle is valid or not.</h3>
+    <input type="text" id="side1">
+    <input type="text" id="side2">
+    <input type="text" id="side3">
+    <button id="sidesCheckButton" onclick="checkTriangleBySides()">Check Triangle</button>
+    <div id="triangleSideCheckResult"></div>
 
-  <h3>32. Write a program to calculate profit or loss.</h3>
-  <input type="text" id="costPrice">
-  <input type="text" id="sellingPrice">
-  <button id="calculateButton" onclick="calculateProfitLoss()">Calculate</button>
-  <div id="calculationResult"></div>
+    <h3>31. Write a program to check whether the triangle is equilateral, isosceles or scalene triangle.</h3>
+    <input type="text" id="inputSide1">
+    <input type="text" id="inputSide2">
+    <input type="text" id="inputSide3">
+    <button id="triangleSideCheckButton" onclick="checkTriangleTypeBySide()">Check Triangle</button>
+    <div id="triangleTypeCheckResult"></div>
 
-  <h3>33. Write a program to check whether a number is Perfect number or not.</h3>
-  <input type="text" id="perfectNumber">
-  <button id="perfectNumberButton" onclick="checkPerfectNumber()">Check</button>
-  <div id="perfectNumberResult"></div>
+    <h3>32. Write a program to calculate profit or loss.</h3>
+    <input type="text" id="costPrice">
+    <input type="text" id="sellingPrice">
+    <button id="calculateButton" onclick="calculateProfitLoss()">Calculate</button>
+    <div id="calculationResult"></div>
 
-  <h3>34. Write a program to print all Perfect numbers between 1 to n.</h3>
-  <input type="text" id="perfectNumberLimit">
-  <button id="perfectNumberPrintButton" onclick="printPerfectNumbers()">Print Perfect Numbers</button>
+    <h3>33. Write a program to check whether a number is Perfect number or not.</h3>
+    <input type="text" id="perfectNumber">
+    <button id="perfectNumberButton" onclick="checkPerfectNumber()">Check</button>
+    <div id="perfectNumberResult"></div>
+
+    <h3>34. Write a program to print all Perfect numbers between 1 to n.</h3>
+    <input type="text" id="perfectNumberLimit">
+    <button id="perfectNumberPrintButton" onclick="printPerfectNumbers()">Print Perfect Numbers</button>
+    
+    <div></div>
+        
+    </ul>
+    
 
 </body>
+
 </html>

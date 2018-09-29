@@ -25,6 +25,7 @@ for(var i=n; i>=1; i--) {
 console.log('(4) :-');
 for(var i='a'; i<'z'; i++) {
 	console.log(i);
+	console.log(i+1);
 }
 
 
@@ -147,7 +148,7 @@ console.log('Sum of all squares = '+sum);
 
 
 /* (15) Check whether the given number is perfect number or not */
-console.log('(15) :-')
+console.log('(15) :-');
 var n = 6;
 var sum = 0;
 for(var i=1; i<n; i++) {
@@ -162,10 +163,40 @@ if (sum==n) {
 }
 
 
-
-var rows = 10;
+/* (16) Display the pattern like right angle triangle with a number.
+The pattern like :
+1
+12
+123
+1234 */
+console.log('(16) :-');
+console.log('-------------16-----------');
+var rows = 9;
 for(var i=1; i<=rows; i++) {
+	var pattern="";
 	for(var j=1; j<=i; j++) {
-		document.write(j);
+		pattern+=j;
+		
 	}
+	console.log(pattern);
 }
+ console.log('-------------16-----------');
+
+
+/* (17) Make such a pattern like right angle triangle with a number which will repeat a number in a row.
+The pattern like :
+ 1
+ 22
+ 333
+ 4444 */
+ console.log('(17) :-');
+ console.log('-------------17-----------');
+ var rows = 9;
+ for(var i=1; i<=rows; i++) {
+ 	var pattern="";
+ 	for(var j=1; j<=i; j++) {
+ 		pattern+=i;
+ 	}
+ 	console.log(pattern);
+ }
+ console.log('-------------17-----------');
